@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
     // VIDEO LOKAL (klik + play)
-    var videoElement = document.getElementById("video");
+    var videoElement = document.querySelector("video");
     if (videoElement) {
         videoElement.addEventListener("click", alertInginPutar);
         videoElement.addEventListener("play", alertVideoLokal);
@@ -42,15 +42,20 @@ document.addEventListener("DOMContentLoaded", function() {
         youtubeContainer.addEventListener("click", alertInginPutar);
     }
 
-    // AUDIO (klik + play)
+    // AUDIO (klik)
     var audioElement = document.getElementById("audio");
     if (audioElement) {
-        audioElement.addEventListener("click", alertInginPutar)
+        audioElement.addEventListener("click", alertInginPutar);
+    }
+
+    // AUDIO (play)
+    var audioElement = document.querySelector("audio");
+    if (audioElement) {
         audioElement.addEventListener("play", alertAudio);
     }
     
     // GAMBAR POSTER (klik saja)
-    var posterImage = document.getElementById("#image img");
+    var posterImage = document.querySelector("#image img");
     if (posterImage) {
         posterImage.addEventListener("click", alertPoster);
     }
