@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../assets/images/coloring_book_irregular_organic_line_seamless_pattern.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-blend-mode: multiply;
+    background-color: rgb(88, 108, 101);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 50%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.7) 100%);
+    pointer-events: none;
+    z-index: 10;
+}
+
+#header {
+    font-family: 'WindSong';
+    padding-top: 5px;
+    height: 120px;
+    background-color: rgb(39, 83, 69);
+    color: aliceblue;
+    font-size: 4vh;
+    margin-bottom: 20px;
+    opacity: 1;
+    writing-mode:horizontal-tb;
+    text-shadow: 0 0 50px #1b1a18, 0 0 50px #f2eaea;
+    border-bottom: solid 20px rgb(209, 207, 207);
+}
+
+.bungkus-header {
+    height: 140px;
+    border-bottom: solid rgb(233, 193, 193);
+    margin-bottom: 50px;
+}
+center {
+    display:block;
+}
+
+#sinopsis {
+    width: 635px;
+    background-color: #201f1f;
+    display:inline-block;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 40px;
+    padding: 15px;
+    box-shadow: (0, 0, 0, 0.8);
+    color: rgb(252, 246, 246);
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+#sinopsis:hover{
+    width: 630px;
+    box-shadow: 5px 5px 15px rgb(55, 55, 54);
+    border-top-right-radius: 90px;
+    background-color: #3e1313;
+    border-style:double;
+}
+
+.bungkus-sinopsis {
+    width: 700px;
+    background-color: #ece7e7;
+    display:inline-block;
+    border-top-right-radius: 160px;
+    border-bottom-left-radius: 60px;
+    padding: 15px;
+    box-shadow: (0, 0, 0, 0.8);
+    color: rgb(252, 246, 246);
+    text-align: justify;
+    opacity: 0.92;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 15px rgb(55, 55, 54);
+    border-bottom: solid 6px rgb(177, 106, 106);
+    
+}
+
+#deskripsi {
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.scroll {
+    padding-top: 50px;
+    background-color: rgb(114, 114, 121);
+    width: 700px;
+    border-radius: 30px;
+    opacity: 0.94;
+    box-shadow: 10px 10px 20px rgb(55, 55, 54);
+    border-top: solid 10px rgb(233, 193, 193);
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+.scroll-box {
+    padding-top: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 70px;
+    background-color: rgb(244, 241, 239);
+    border-radius: 20px;
+    opacity: 1;
+    border-style:groove;
+}
+
+.scroll-box2 {
+    padding-top: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 70px;
+    background-color: rgb(244, 241, 239);
+    border-radius: 20px;
+    padding-bottom: 15px;
+    opacity: 1;
+    border-style:groove;
+}
+
+h3 {
+    padding-top: 10px;
+    height: 100%;
+    padding-bottom: 10px;
+    width: 600px;
+    max-height: 50px;
+    background-color: rgb(41, 76, 65);
+    color: rgb(214, 241, 232);
+    opacity: 0.8;
+    box-shadow: 5px 5px 10px rgb(18, 4, 4);
+}
+
+#judulOST {
+    font-style: italic;
+    border-style: dashed;
+    border-radius: 200px;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+video {
+    object-fit: cover;
+    background: #000;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: rgb(190, 204, 204);
+    opacity: 0.9;
+    border-style: solid;
+    box-shadow: 10px 10px 20px rgb(41, 76, 65);
+}
+
+video:hover {
+    box-shadow: 5px 5px 10px rgb(68, 11, 11);
+}
+
+#video-yt {
+    width: 600px;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: rgb(190, 204, 204);
+    opacity: 0.9;
+    margin-bottom: 50px;
+    border-style: solid;
+    box-shadow: 10px 10px 20px rgb(41, 76, 65);
+}
+
+#video-yt:hover {
+    box-shadow: 5px 5px 10px rgb(68, 11, 11);
+}
+
+#audio {
+    
+    padding-top: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 70px;
+    background-color: rgb(49, 46, 45);
+    border-radius: 20px;
+    padding-bottom: 15px;
+    border-style:groove;
+}
+
+#audio audio {
+    width: 90%;
+    max-width: 90%;
+}
+
+#audio:hover {
+    padding-top: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 70px;
+    background-color: rgb(244, 241, 239);
+    border-radius: 20px;
+    padding-bottom: 15px;
+    transform: scale(1.2);
+    box-shadow: 10px 10px 20px rgb(41, 76, 65);
+    border-style:groove;
+}
+
+#image {
+    padding-top: 5px;
+    height: 805px;
+    width: 570px;
+    border-style: solid;
+    box-shadow: 10px 10px 20px rgb(41, 76, 65);
+}
+
+#image:hover {
+    box-shadow: 10px 10px 30px rgb(68, 11, 11);
+}
